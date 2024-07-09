@@ -58,12 +58,19 @@ h1 {
 }
 
 .menu > a {
-    margin: 0 .5em;
+    margin: .2em .5em;
+}
+
+@media screen and (max-width: 580px) {
+    .menu {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 section {
     min-height: 50vh;
-    border: 5px solid #fff;
+    /* border: 5px solid #fff; */
 }
 
 .apresentacao {
@@ -111,4 +118,37 @@ h2 {
     color: #fff;
     opacity: .5;
     transition: .4s ease-in-out;
+}
+
+.testemunhos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5%;
+}
+
+.testemunhos-container {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.testemunhos-container > img {
+    width: 80px;
+    height: auto;
+    margin: 2em;
+}
+
+p {
+    font-family: Raleway, sans-serif;
+    font-size: .9em;
+}
+
+h4 {
+    font-family: "Playfair Display", serif;
+    font-size: 1.1em;
+    margin: 2em;
 }
