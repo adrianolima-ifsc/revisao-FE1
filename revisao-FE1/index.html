@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
     <title>Acampamento do Chef</title>
 </head>
 
@@ -13,7 +14,7 @@
     <header class="navbar">
         <a class="titulo" href="">
             <div class="logo">
-                <img src="./img/tent.png" alt="logo">
+                <img src="./img/barraca-de-acampamento(1).png" alt="logo">
             </div>
             <h1>Acampamento do Chef</h1>
         </a>
@@ -26,25 +27,37 @@
     <main>
         <section class="apresentacao">
             <div class="apresentacao-container">
-                <h2>Acampamento Culinário para Adultos</h2>
+                <h2>Acampamento Culinário<br>para Adultos!</h2>
                 <p class="apresentacao-paragrafo">Verão de 2025 | São José</p>
                 <a class="inscreva" href="">Inscreva-se</a>
             </div>
         </section>
         <section>História</section>
-        <section>Expectativa</section>
-        <section>Galeria</section>
+        <section>Espectativa</section>
+        <section class="galeria">Galeria</section>
         <section class="testemunhos">
-            <a href=""><img src="./img/seta-esquerda.png" alt="seta esquerda"></a>
+            <a id="seta-esquerda" href=""><img src="./img/esquerda.png" alt="seta esquerda"></a>
             <div class="testemunhos-container">
-                <img class="aspas" src="./img/quote.png" alt="aspas">
-                <p>Eu sou um depoimento. Clique para me editar e adicionar um texto que diga algo legal sobre você e seus serviços. Deixe que seus clientes avaliem você e digam aos amigos o quão incrível você é.</p>
-                <h4>Adriano Lima</h4>
+                <img class="aspas" src="./img/citar.png" alt="aspas">
+                <p>Eu sou um depoimento. Clique para me editar e adicionar um texto que diga algo legal sobre você e
+                    seus serviços. Deixe que seus clientes avaliem você e digam aos amigos o quão incrível você é.</p>
+                <h4>Mike Sokolv</h4>
             </div>
-            <a href=""><img src="./img/seta-direita.png" alt="seta direita"></a>
+            <a id="seta-direita" href=""><img src="./img/direita.png" alt="seta direita"></a>
         </section>
         <section>Registro</section>
-        <section>Contato</section>
+        <section class="contato">
+            <h3>Contato</h3>
+            <p>Perguntas? Ligue para 123456789 ou deixe uma mensagem.</p>
+            <p>500 Terry Francine Street San Francisco, CA 94158</p>
+            <form action="" class="contato-formulario">
+                <input class="contato-formulario-campo" type="text" placeholder="Nome" id="nome">
+                <input class="contato-formulario-campo" type="email" name="" id="email" placeholder="Email">
+                <input class="contato-formulario-campo" type="text" name="" id="assunto" placeholder="Assunto">
+                <textarea class="contato-formulario-campo" name="" id="mensagem" cols="30" rows="10" placeholder="Digite a sua mensagem aqui."></textarea>
+                <button type="submit" class="contato-formulario-botao">Enviar</button>
+            </form>
+        </section>
     </main>
     <footer></footer>
 </body>
